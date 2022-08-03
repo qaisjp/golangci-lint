@@ -30,6 +30,7 @@ func NewFileReader(toCfg, commandLineCfg *Config, log logutils.Log) *FileReader 
 	}
 }
 
+// start
 func foo() error, bool {
 	return errors.New("hello"), false
 }
@@ -44,6 +45,7 @@ func testForJmikkola() {
 	err, y := bar()
 	fmt.Println(err, x, y)
 }
+// end
 
 func (r *FileReader) Read() error {
 	// XXX: hack with double parsing for 2 purposes:
