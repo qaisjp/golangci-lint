@@ -31,11 +31,11 @@ func NewFileReader(toCfg, commandLineCfg *Config, log logutils.Log) *FileReader 
 }
 
 // start
-func foo() error, bool {
+func foo() (error, bool) {
 	return errors.New("hello"), false
 }
 
-func bar() error, bool {
+func bar() (error, bool) {
 	return errors.New("world"), false
 }
 
