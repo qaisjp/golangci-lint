@@ -30,6 +30,21 @@ func NewFileReader(toCfg, commandLineCfg *Config, log logutils.Log) *FileReader 
 	}
 }
 
+func foo() error, bool {
+	return errors.New("hello"), false
+}
+
+func bar() error, bool {
+	return errors.New("world"), false
+}
+
+func testForJmikkola() {
+	var err error
+	err, x := foo()
+	err, y := bar()
+	fmt.Println(err, x, y)
+}
+
 func (r *FileReader) Read() error {
 	// XXX: hack with double parsing for 2 purposes:
 	// 1. to access "config" option here.
